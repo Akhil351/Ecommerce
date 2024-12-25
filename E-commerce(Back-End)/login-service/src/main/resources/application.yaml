@@ -1,0 +1,21 @@
+server:
+  port:
+    9001
+spring:
+  application:
+    name: LOGIN-SERVICE
+  profiles:
+    active: db,mongo,server
+  config:
+    import:
+      - "optional:configserver:http://localhost:9009"
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    topic:
+      name: create-topic
+    topic1:
+      name: delete-topic

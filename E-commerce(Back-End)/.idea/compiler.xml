@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="login-service" />
+        <module name="SERVICE-REGISTRY" />
+        <module name="ECOMMERCE-SERVICE" />
+        <module name="COMMON-SERVICE" />
+        <module name="PRODUCT-CATALOG-SERVICE" />
+        <module name="CONFIG-SERVER" />
+        <module name="GATEWAY-SERVICE" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="COMMON-SERVICE" options="-parameters" />
+      <module name="CONFIG-SERVER" options="-parameters" />
+      <module name="ECOMMERCE-SERVICE" options="-parameters" />
+      <module name="GATEWAY-SERVICE" options="-parameters" />
+      <module name="PRODUCT-CATALOG-SERVICE" options="-parameters" />
+      <module name="SERVICE-REGISTRY" options="-parameters" />
+      <module name="login-service" options="-parameters" />
+      <module name="root-pom" options="-parameters" />
+    </option>
+  </component>
+</project>
