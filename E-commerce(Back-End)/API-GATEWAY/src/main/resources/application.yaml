@@ -9,3 +9,5 @@ spring:
   config:
     import:
       - "optional:configserver:http://localhost:9009"
+frontEnd:
+  url: "http://localhost:5173"

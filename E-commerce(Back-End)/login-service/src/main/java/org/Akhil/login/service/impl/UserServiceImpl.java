@@ -46,8 +46,7 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(()->new ResourceNotFoundException("User Not Found"));
     }
     private User updateExistingUser(User existingUser,UpdateUserRequest user){
-        if(!ObjectUtils.isEmpty(user.getFirstName())) existingUser.setFirstName(user.getFirstName());
-        if(!ObjectUtils.isEmpty(user.getLastName())) existingUser.setLastName(user.getLastName());
+        if(!ObjectUtils.isEmpty(user.getFullName())) existingUser.setFullName(user.getFullName());
         return existingUser;
     }
 

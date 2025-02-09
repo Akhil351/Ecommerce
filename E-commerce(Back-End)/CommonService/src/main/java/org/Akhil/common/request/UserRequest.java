@@ -10,8 +10,7 @@ import java.util.List;
 @Data
 public class UserRequest {
     @NotBlank(message = "name is required")
-    private String firstName;
-    private String lastName;
+    private String fullName;
     @NotBlank(message = "email is required")
     @Email(message = "The email should be in a valid format, like example@gmail.com")
     private String email;

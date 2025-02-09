@@ -61,8 +61,7 @@ public class AuthServiceImpl implements AuthService {
             else roles=user.getRole().stream().map(Role::code).toList();
             User theUser=userRepo.save(User.builder()
                     .id(userId)
-                    .firstName(user.getFirstName())
-                    .lastName(user.getLastName())
+                    .fullName(user.getFullName())
                     .password(passwordEncoder.encode(user.getPassword()))
                     .phoneNumber(user.getPhoneNumber())
                     .email(user.getEmail())
