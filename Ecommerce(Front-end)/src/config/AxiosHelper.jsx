@@ -1,5 +1,0 @@
-import axios from "axios";
-export const baseUrl="http://localhost:9001"
-export const httpClient=axios.create({
-    baseURL:baseUrl,
-});
